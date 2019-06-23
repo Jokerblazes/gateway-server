@@ -11,7 +11,7 @@ spring:
         - id: order-service #服务唯一ID标识
           uri: lb://order-service # 注册中心的服务id
           predicates:
-            - Path=/order/** #请求转发
+            - Path=/orders/** #请求转发
 #          filters:
 #            - StripPrefix=1 #切割请求，去除/order/
         #TODO: 添加Inventory Service的反向代理
